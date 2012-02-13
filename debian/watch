@@ -1,0 +1,3 @@
+version=3
+http://scrapy.org/releases/(\d\.\d)/ \
+ scrapy-([\d\.]+)\.tar\.gz

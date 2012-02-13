@@ -1,0 +1,14 @@
+Document: python-scrapy-doc
+Title: Python Scrapy Documentation
+Author: Scrapy Developers
+Abstract: This documentation gives a wide overview of the Python Scrapy module.
+ It should contain everything someone needs to know about Scrapy.
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-scrapy-doc/html/index.html
+Files: /usr/share/doc/python-scrapy-doc/html/*.html
+ /usr/share/doc/python-scrapy-doc/html/experimental/*.html
+ /usr/share/doc/python-scrapy-doc/html/intro/*.html
+ /usr/share/doc/python-scrapy-doc/html/topics/*.html
+
