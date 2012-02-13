@@ -1,3 +1,16 @@
+python-scrapy (0.14.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - Added dependency on python-w3lib.
+  * debian/copyright:
+    - Updated formet to fit the dep5 specification.
+    - Added copyright information for file scrapy/xlib/ordereddict.py.
+  * debian/python-scrapy.lintian-overrides:
+    - Removed override for file googledir/scrapy.cfg.
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Sun, 12 Feb 2012 23:45:47 +0400
+
 python-scrapy (0.12.0.2546-1) unstable; urgency=low
 
   * New upstream release:
