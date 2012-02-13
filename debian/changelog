@@ -1,5 +1,25 @@
+python-scrapy (0.7-2) unstable; urgency=low
+
+  * Converted the package to "3.0 (quilt)" format.
+  * debian/control:
+    - Changed Build dependency from python-all-dev to python.
+    - Added dependency on python-beautifulsoup and python-clientform.
+    - Added Recommends field listing listing all the non absolute dependencies.
+    - Moved python-simplejson dependency from Suggests to Recommends.
+    - Changed dependecy on python-twisted which is "extra" to
+      python-twisted-core, python-twisted-web and python-twisted-conch.
+  * debian/rules:
+    - Now excludes BeautifulSoup.py and ClientForm.py.
+  * debian/patches:
+    - 01_external_modules.diff: Updated imports of BeautifulSoup and ClientForm
+      to point to the main Python modules.
+  * debian/source/format:
+    - New file set to "3.0 (quilt)".
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Tue, 24 Nov 2009 00:07:21 +0100
+
 python-scrapy (0.7-1) unstable; urgency=low
 
   * Initial release. (Closes: #551038)
 
- -- Ignace Mouzannar <mouzannar@gmail.com>  Mon, 09 Nov 2009 16:08:45 +0100
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Thu, 19 Nov 2009 23:25:57 +0100
