@@ -6,7 +6,7 @@ Uploaders: Ignace Mouzannar <mouzannar@gmail.com>
 DM-Upload-Allowed: yes
 Build-Depends: debhelper (>= 7.0.50~), bash-completion, python
 Build-Depends-Indep: python-support, python-sphinx, libjs-jquery, python-twisted-core, python-twisted-web, python-twisted-conch
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 Homepage: http://scrapy.org/
 Vcs-Svn: svn://svn.debian.org/svn/python-modules/packages/python-scrapy/trunk/
 Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/python-scrapy/trunk/

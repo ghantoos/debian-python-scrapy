@@ -1,3 +1,13 @@
+python-scrapy (0.12.0.2542-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - Bumped Standards-Version to 3.9.2.
+  * debian/pyversions:
+    - Added build support for Python 2.7. (Closes: #629091)
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Sat, 04 Jun 2011 19:28:35 +0200
+
 python-scrapy (0.12.0.2540-1) unstable; urgency=low
 
   * New upstream release (Closes: #619352)
