@@ -3,6 +3,7 @@ Section: python
 Priority: optional
 Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Uploaders: Ignace Mouzannar <mouzannar@gmail.com>
+DM-Upload-Allowed: yes
 Build-Depends: debhelper (>= 7.0.50~), bash-completion, python
 Build-Depends-Indep: python-support, python-sphinx, libjs-jquery, python-twisted-core, python-twisted-web, python-twisted-conch
 Standards-Version: 3.9.1
