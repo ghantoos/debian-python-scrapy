@@ -1,3 +1,12 @@
+python-scrapy (0.8-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches:
+    - 01_external_modules.diff: refreshed content as some files were modified
+      in the new upstream version.
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Sun, 13 Dec 2009 23:13:57 +0000
+
 python-scrapy (0.7-2) unstable; urgency=low
 
   * Converted the package to "3.0 (quilt)" format.
