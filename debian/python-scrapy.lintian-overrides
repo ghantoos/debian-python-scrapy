@@ -1,3 +1,4 @@
 python-scrapy: duplicated-compressed-file usr/share/pyshared/scrapy/tests/sample_data/compressed/feed-sample1.xml.bz2
 python-scrapy: duplicated-compressed-file usr/share/pyshared/scrapy/tests/sample_data/compressed/feed-sample1.xml.gz
 python-scrapy: no-upstream-changelog
+python-scrapy: duplicate-files usr/share/doc/python-scrapy/examples/experimental/googledir/scrapy.cfg usr/share/doc/python-scrapy/examples/googledir/scrapy.cfg

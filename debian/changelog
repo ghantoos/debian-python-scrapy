@@ -1,3 +1,27 @@
+python-scrapy (0.12.0.2546-1) unstable; urgency=low
+
+  * New upstream release:
+    - Includes the patch adding iPython-0.11 compatibility. Thank you
+      Julian Taylor <jtaylor.debian@googlemail.com> for providing the patch.
+      (Closes: #636719)
+  * debian/control:
+    - Added dependency on libjs-underscore.
+    - Removed dependency on python-support.
+    - Bumped minimum required python dependency to 2.6.6-3~.
+    - Added X-Python-Version.
+  * debian/rules:
+    - Added python2 to dh's --with argument.
+  * debian/pyversions:
+    - Deleted file.
+  * debian/python-scrapy-doc.links:
+    - Added link to underscore.js library.
+  * debian/python-scrapy.lintian-overrides:
+    - Added overrides for false-positive duplicate file.
+  * debian/python-scrapy-doc.lintian-verrides:
+    - Added override for the missing changelog in the -doc package.
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Mon, 29 Aug 2011 03:07:25 +0200
+
 python-scrapy (0.12.0.2542-1) unstable; urgency=low
 
   * New upstream release.
