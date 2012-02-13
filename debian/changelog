@@ -1,3 +1,13 @@
+python-scrapy (0.12.0.2538-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - Removed build dependency on python-jinja. (Closes: #613282)
+    - Moved the Python dependency from Build-Depends-Indep to Build-Depends.
+      (Closes: #613281)
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Sun, 27 Feb 2011 19:35:57 +0100
+
 python-scrapy (0.12.0.2528-1) unstable; urgency=low
 
   * New upstream version.
