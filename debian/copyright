@@ -38,9 +38,14 @@ Copyright:
     2001-2006, Patrick K. O'Brien <pydispatcher-devel@lists.sourceforge.net>
 Licence: BSD
 
+Files: scrapy/xlib/simplejson/*
+Copyright:
+    2006-2009, Bob Ippolito <bob@redivi.com>
+Licence: MIT
+
 Files: debian/*
 Copyright:
-    2009, Ignace Mouzannar <mouzannar@gmail.com>
+    2009-2010, Ignace Mouzannar <mouzannar@gmail.com>
 Licence: BSD
 
 License: BSD
@@ -69,9 +74,6 @@ License: BSD
    CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
    ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
    POSSIBILITY OF SUCH DAMAGE.
-
- On Debian systems, the complete text of the BSD license can be found
- in `/usr/share/common-licenses/BSD'.
 
 License: MIT
 

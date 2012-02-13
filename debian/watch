@@ -1,3 +1,2 @@
 version=3
-http://scrapy.org/releases/(\d\.\d)/ \
- scrapy-([\d\.]+)\.tar\.gz
+http://pypi.python.org/packages/source/S/Scrapy/Scrapy-([\d\.]+).tar.gz

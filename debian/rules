@@ -1,22 +1,22 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-export DH_ALWAYS_EXCLUDE=license.txt:_sources/:.buildinfo:BeautifulSoup.py:ClientForm.py
+export DH_ALWAYS_EXCLUDE=license.txt:_sources/:.buildinfo
 
 %:
-	dh $@
+	dh $@ --with bash_completion
 
 override_dh_auto_install:
 	dh_auto_install
-	mv $(CURDIR)/debian/tmp/usr/bin/scrapy-ctl.py $(CURDIR)/debian/tmp/usr/bin/scrapy-ctl
 	cd docs/ && $(MAKE) html
 
 override_dh_install:
 	dh_install -Xjquery.js
+	mv $(CURDIR)/debian/python-scrapy/usr/bin/scrapy-ws.py $(CURDIR)/debian/python-scrapy/usr/bin/scrapy-ws
 
 override_dh_auto_clean:
 	dh_auto_clean
 	cd docs/ && $(MAKE) clean
 
 override_dh_compress:
-	dh_compress -X.js
+	dh_compress -X.js -Xobjects.inv

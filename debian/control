@@ -3,17 +3,17 @@ Section: python
 Priority: optional
 Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
 Uploaders: Ignace Mouzannar <mouzannar@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), python-jinja
+Build-Depends: debhelper (>= 7.0.50~), python-jinja, bash-completion
 Build-Depends-Indep: python-support, python, python-sphinx, libjs-jquery, python-twisted-core, python-twisted-web, python-twisted-conch
-Standards-Version: 3.8.3
+Standards-Version: 3.9.1
 Homepage: http://scrapy.org/
 Vcs-Svn: svn://svn.debian.org/svn/python-modules/packages/python-scrapy/trunk/
 Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/python-scrapy/trunk/
 
 Package: python-scrapy
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-twisted-core, python-twisted-web, python-twisted-conch, python-libxml2, python-beautifulsoup, python-clientform
-Recommends: python-simplejson | python (>= 2.6), python-lxml, python-guppy, python-boto, python-django, ipython, python-pygments, python-imaging, python-mysqldb
+Depends: ${misc:Depends}, ${python:Depends}, python-twisted-core, python-twisted-web, python-twisted-conch, python-twisted-mail, python-libxml2, python-boto
+Recommends: python-simplejson | python (>= 2.6), python-lxml, python-guppy, python-django, ipython, python-pygments, python-imaging, python-mysqldb
 Provides: ${python:Provides}
 Suggests: python-openssl
 Description: Python web scraping and crawling framework

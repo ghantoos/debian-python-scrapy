@@ -1,3 +1,88 @@
+python-scrapy (0.12.0.2528-1) unstable; urgency=low
+
+  * New upstream version.
+  * debian/rules:
+    - Removed references to scrapy-ctl.py and scrapy-sqs.py.
+    - Added bash-completion support.
+    - Added exclusion of "objects.inv" in override_dh_compress.
+      (Closes: #608774)
+  * debian/control:
+    - Added Build-Depends on bash-completion.
+  * debian/scrapy-ctl.1, debian/scrapy-sqs.1:
+    - Removed files, as their respective binary files are not distributed by
+      upstream anymore.
+  * debian/python-scrapy.install:
+    - Added the installation of scrapy-ws.py.
+  * debian/python-scrapy.manpages:
+    - Removed references to scrapy-ctl.1 and scrapy-sqs.1.
+    - Added scrapy.1 manpage.
+  * debian/watch:
+    - Updated the file to point to the new PyPI repository. Thank you Janos 
+      Guljas <janos@resenje.org> for the patch.
+  * debian/python-scrapy.bash-completion:
+    - New file pointing to the bash-completion file distributed by upstream.
+  * debian/pytnon-scrapy.lintian-override:
+    - Added override of "no-upstream-changelog" warning, as upstream does not
+      provide any changelog.
+  * debian/python-scrapy.README.Debian:
+    - Added a mention about BeautifulSoup and ClientForm embedded libraries.
+  * debian/changelog:
+    - Setting the package back to unstable, as this is upstream's stable
+      version and no freeze exception will be requested for it.
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Thu, 27 Jan 2011 12:15:03 +0100
+
+python-scrapy (0.9-1) experimental; urgency=low
+
+  * New upstream release.
+  * debian/patches:
+    - 02_view_response.diff: Removed this patch as it has been applied upstream.
+    - 01_external_modules.diff: Removed this patch as upstream clearly pointed
+      out the need to use the embedded copies of these external modules instead
+      of the ones delivered by the Debian packages.
+      For more details: http://dev.scrapy.org/ticket/129
+  * debian/control:
+    - Bumped Standards-Version to 3.9.1.
+    - Moved python-boto from Recommends to Depends as it is now needed by the
+      scrapy-sqs script.
+    - Removed dependencies on python-beautifulsoup and python-clientform as 
+      the embedded modules in scrapy/xlib/ will be used instead.
+  * debian/copyright:
+    - Removed reference to deprecated /usr/share/common-licenses/BSD.
+  * debian/rules:
+    - Updated to remove language extensions (.py) of new scripts added by
+      upstream.
+    - Removed the flag used to ignore BeautifulSoup.py and ClientForm.py.
+  * debian/scrapy-sqs.1 & debian/scrapy-ws.1
+    - New manpages for scrapy-sqs and scrapy-ws.
+  * debian/copyright:
+    - Added copyright information for folder scrapy/xlib/simplejson/
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Sun, 22 Aug 2010 22:52:30 +0200
+
+python-scrapy (0.8-3) unstable; urgency=low
+
+  * debian/watch:
+    - Corrected regular expression to catch "Scrapy" and "scrapy".
+  * debian/patches:
+    - 01_external_modules.diff: refreshed patch.
+    - 02_view_response.diff: fixes bug in open_in_browser() function with
+      Python 2.5. (Closes: #573369).
+  * debian/control:
+    - Bumped Standards-Version to 3.8.4.
+  * debian/python-scrapy.lintian-overrides:
+    - Added overrides for 'duplicated-compressed-file' as the two suspected
+      files are intentionally present and used by the scrapy test suite.
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Thu, 13 May 2010 14:59:09 +0200
+
+python-scrapy (0.8-2) unstable; urgency=low
+
+  * debian/control:
+    - Added dependency on python-twisted-mail.
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Mon, 14 Dec 2009 22:13:54 +0000
+
 python-scrapy (0.8-1) unstable; urgency=low
 
   * New upstream release.
@@ -5,7 +90,7 @@ python-scrapy (0.8-1) unstable; urgency=low
     - 01_external_modules.diff: refreshed content as some files were modified
       in the new upstream version.
 
- -- Ignace Mouzannar <mouzannar@gmail.com>  Sun, 13 Dec 2009 23:13:57 +0000
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Mon, 14 Dec 2009 21:26:16 +0000
 
 python-scrapy (0.7-2) unstable; urgency=low
 

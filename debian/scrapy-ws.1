@@ -1,0 +1,52 @@
+.TH SCRAPY-WS 1 "August 11, 2010"
+.SH NAME
+scrapy-ws \- Python Scrapy web service control script
+.SH SYNOPSIS
+.B scrapy-ws
+[\fI\-P|\-H\fR] \fIaction\fR ...
+.SH DESCRIPTION
+.PP
+Example script to control and monitor Scrapy using its web service. It only
+provides a reduced functionality as its main purpose is to illustrate how to
+write a web service client. Feel free to improve or write you own.
+.SH OPTIONS
+.TP
+.I -H
+Scrapy host to connect to. (default: localhost)
+.TP
+.I -P
+Scrapy port to connect to. (default: 6080)
+.TP 
+.I help
+List of available commands
+.TP
+.I run <spider_name>
+Schedule spider for running
+.TP
+.I stop <spider>
+Stop a running spider
+.TP
+.I list-running
+List running spiders
+.TP
+.I list-available
+List name of available spiders
+.TP
+.I list-resources
+List available web service resources
+.TP
+.I list-extensions
+List enabled extensions
+.TP
+.I get-spider-stats <spider>
+Get stats of a running spider
+.TP
+.I get-global-stats
+Get global stats
+
+.SH AUTHOR
+Scrapy-ws was written by the Scrapy Developers 
+<scrapy-developers@googlegroups.com>.
+.PP
+This manual page was written by Ignace Mouzannar <mouzannar@gmail.com>,
+for the Debian project (but may be used by others).
