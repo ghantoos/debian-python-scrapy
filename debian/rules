@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-export DH_ALWAYS_EXCLUDE=license.txt:_sources/:.buildinfo
+export DH_ALWAYS_EXCLUDE=license.txt:_sources/:.buildinfo:*.egg
 
 %:
 	dh $@ --with bash_completion --with python2

@@ -1,3 +1,14 @@
+python-scrapy (0.14.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/patches:
+    - 01_ftbs_easy_query.diff: corrects FTBS caused by the urlparse
+    Python module import. (Closes: #678792)
+  * debian/rules:
+    - Added exclude on *.egg files.
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Thu, 28 Jun 2012 23:41:01 +0400
+
 python-scrapy (0.14.1-1) unstable; urgency=low
 
   * New upstream release.
